@@ -9,7 +9,7 @@ public class ObstacleSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(SpawnSprite());
         Spawn();
     }
 
@@ -24,9 +24,18 @@ public class ObstacleSpawner : MonoBehaviour
        } 
     }
 
-    // Update is called once per frame
-    void Update()
+   //sprite muncul ketika 3 detik
+    public IEnumerator SpawnSprite()
     {
-        
+        if (transform.childCount < 10)
+        {
+            float randomX = Random.Range(-6, 6);
+            float randomY = Random.Range(-4, 4);
+
+            Instantiate(kotak, new Vector2(randomX, randomY), Quaternion.identity); 
+            
+        }
+        yield return new WaitForSeconds(3);
+        StartCoroutine(SpawnSprite()); 
     }
 }
