@@ -138,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341574968}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -639.87354, y: -322.62, z: -1.1481977}
+  m_LocalPosition: {x: -639.87354, y: -329.1, z: -1.1481977}
   m_LocalScale: {x: 9.402683, y: 257.72574, z: 1.211215}
   m_Children: []
   m_Father: {fileID: 1141971308}
@@ -310,7 +310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500533945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -657.18, y: -331.48404, z: -1.1481977}
+  m_LocalPosition: {x: -657.18, y: -337.96405, z: -1.1481977}
   m_LocalScale: {x: 8.485398, y: 124.39205, z: 1.211215}
   m_Children: []
   m_Father: {fileID: 1141971308}
@@ -498,7 +498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645170145}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -639.87354, y: -340.57, z: -1.1481977}
+  m_LocalPosition: {x: -639.87354, y: -347.05002, z: -1.1481977}
   m_LocalScale: {x: 9.851461, y: 257.72574, z: 1.211215}
   m_Children: []
   m_Father: {fileID: 1141971308}
@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 1390632111}
   - component: {fileID: 1390632110}
   - component: {fileID: 1390632108}
+  - component: {fileID: 1390632109}
   m_Layer: 0
   m_Name: Bola
   m_TagString: Untagged
@@ -771,11 +772,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1390632105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09e0801d62bdfb94cb07e944a383400e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fdfd6070c3d8ff42b1a1d3f6ef46f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  score: {fileID: 0}
+  moveSpeed: 0.1
+--- !u!114 &1390632109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390632105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0afea69b02d51438c17e1c1704254d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1390632110
 Rigidbody2D:
   serializedVersion: 4
@@ -839,14 +851,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1654256063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e717dd3f6029b2458f1e1f371c5deca, type: 3}
+  m_Script: {fileID: 11500000, guid: 20cba6577e03c9e41b37d1db7a25d938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   kotak: {fileID: 2737795495970252417, guid: cc46ed6bb0c63af4882e0d7305e4d95f, type: 3}
-  xMin: -7
-  xMax: 8
-  yMin: -4
-  yMax: 2
 --- !u!4 &1654256065
 Transform:
   m_ObjectHideFlags: 0
@@ -887,7 +895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702499420}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -622.65, y: -331.48404, z: -1.1481977}
+  m_LocalPosition: {x: -622.65, y: -337.96405, z: -1.1481977}
   m_LocalScale: {x: 9.396854, y: 124.39205, z: 1.211215}
   m_Children: []
   m_Father: {fileID: 1141971308}
