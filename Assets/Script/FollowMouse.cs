@@ -7,6 +7,7 @@ public class FollowMouse : MonoBehaviour
     private Vector3 mousePosition;
     public float moveSpeed = 0.1f;
     public ScoreManager score;
+    public SpawnBlackSquere blackSquere;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,15 @@ public class FollowMouse : MonoBehaviour
         {
             score.scoreadd();
             Destroy(col.gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.gameObject.tag == "RedSquere")
+        {
+            score.scoremin();
+            blackSquere.BlackSquereSpawner();
+            Destroy(other.gameObject);
         }
     }
 }
